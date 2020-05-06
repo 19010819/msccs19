@@ -1,0 +1,98 @@
+body {
+  font-family: "Tahoma", sans-serif;
+  background: #333;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.col {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.price-box {
+  background: #fff;
+  color: #555;
+  list-style-type: none;
+  border: 1px solid #555;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.price-box:hover,
+.price-box.best {
+  box-shadow: 0 10px 15px 0 #000;
+}
+
+.price-box .header {
+  background-color: #111;
+  color: #fff;
+  font-size: 25px;
+}
+
+.price-box .header.header-green {
+  background-color: #4CAf50;
+}
+
+.price-box li {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.price-box .emph {
+  background-color: #f4f4f4;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAf50;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0px;
+  font-size: 14px;
+  background-color: darkgray;
+  color: black;
+  text-align: center;
+}
+
+.cardres {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+@media(max-width:700px) {
+  .col {
+    width: 100%;
+  }
+}
